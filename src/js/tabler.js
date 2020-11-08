@@ -4,6 +4,12 @@ import './autosize';
 import './input-mask';
 import './dropdown';
 
+import ColorInput from './colorinput'
+
+export default {
+	ColorInput
+};
+
 (function() {
 	/**
 	 */

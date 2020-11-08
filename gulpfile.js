@@ -181,7 +181,7 @@ gulp.task('js', () => {
 		input: `${srcDir}/js/tabler.js`,
 		cache,
 		output: {
-			name: 'tabler.js',
+			name: 'tabler',
 			format: 'umd',
 		},
 		plugins: [
