@@ -7,6 +7,7 @@ Color Input
   margin: 0;
   line-height: 1;
   cursor: pointer;
+  vertical-align: bottom;
 }
 
 .form-colorinput-input {
@@ -17,10 +18,10 @@ Color Input
 
 .form-colorinput-color {
   display: block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   color: #fff;
-  border: 1px solid $border-color-transparent;
+  border: 1px solid $border-color-dark-transparent;
   border-radius: 3px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
 
@@ -35,10 +36,6 @@ Color Input
     background-image: escape-svg($form-check-input-checked-bg-image);
     opacity: 0;
     transition: .3s opacity;
-
-    .form-colorinput-input:checked ~ & {
-      opacity: 1;
-    }
   }
 
   .form-colorinput-input:focus ~ & {
@@ -53,3 +50,13 @@ Color Input
   }
 }
 
+.form-colorinput-input:checked ~ .form-colorinput-color:before,
+.form-colorinput-color.active:before {
+  opacity: 1;
+}
+
+.dropdown-menu-colors {
+  padding: .5rem .5rem;
+  width: #{6 * 1.75rem + 1rem};
+  min-width: auto;
+}
